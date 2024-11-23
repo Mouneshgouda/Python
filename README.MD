@@ -1,4 +1,4 @@
-<h2><div style="font-family: Trebuchet MS; background-color: #1b191d; color: #FFFFFF; padding: 12px; font-size: 35px; line-height: 1.5;text-align: center; line-height: 1.;">🅶🆄 🆁🅰🅽🅽🅰 🅶🅾🆄🅳🅰--🅳🅰🆃🅰🆂🅲🅸🅴🅽🆃 👨‍💻</div> 
+<h2><div style="font-family: Trebuchet MS; background-color: #1b191d; color: #FFFFFF; padding: 12px; font-size: 35px; line-height: 1.5;text-align: center; line-height: 1.;">Mounesh 🅶🅾🆄🅳🅰--🅳🅰🆃🅰🆂🅲🅸🅴🅽🆃 👨‍💻</div> 
 
 
 # Python Full Stack Development.
@@ -7,7 +7,7 @@
 ## **🎓 Course Information** 
 
 - **Subject Code** : 
-- **Faculty**: Mr Guranna Gouda  (Assistant Professor)
+- **Faculty**: Mr Mounesh Gouda  (Assistant Professor)
 - **Semester**: 4
 - **Year**: 2023
 - **Divisions** (under direct tutelage): 4B17,4B18,4B19
