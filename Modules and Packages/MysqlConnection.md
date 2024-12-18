@@ -1,4 +1,4 @@
-``c
+```python
 import mysql.connector
 
 # Connect to MySQL database
@@ -43,4 +43,4 @@ for row in rows:
 # Close the connection
 cursor.close()
 conn.close()
-``
+```
