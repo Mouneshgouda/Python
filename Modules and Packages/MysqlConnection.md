@@ -1,4 +1,4 @@
---c
+``c
 import mysql.connector
 
 # Connect to MySQL database
