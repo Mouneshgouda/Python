@@ -48,3 +48,55 @@ The `Bank` class manages multiple bank accounts and provides methods to add acco
 - `add_account(account)`: Adds a new account to the bank. Returns a message confirming that the account has been added.
 - `get_account(account_number)`: Retrieves the account details for a given `account_number`. If the account exists, returns its details; otherwise, returns an "Account not found" message.
 - `info()`: Returns the total number of accounts currently in the bank.
+
+
+# School Management System
+
+## Objective:
+You are tasked with creating a system to manage students, teachers, and courses at a school. The system will consist of three main components: **Student**, **Teacher**, and **Course** classes. These classes will be used to represent and manage the information about students, teachers, and the courses they are enrolled in.
+
+## Classes and Attributes
+
+### 1. Student Class
+Represents a student enrolled in the school.
+
+#### Attributes:
+- `name` (string): The name of the student.
+- `grade` (string): The grade or class the student is in.
+
+#### Constructor (`__init__`):
+- Initializes the `name` and `grade` attributes.
+
+#### Method:
+- `get_details()`: Returns a string that provides the student's name and grade.
+
+### 2. Teacher Class
+Represents a teacher employed at the school.
+
+#### Attributes:
+- `name` (string): The name of the teacher.
+- `subject` (string): The subject taught by the teacher.
+
+#### Constructor (`__init__`):
+- Initializes the `name` and `subject` attributes.
+
+#### Method:
+- `get_details()`: Returns a string that provides the teacher's name and subject.
+
+### 3. Course Class
+Represents a course that is being taught at the school.
+
+#### Attributes:
+- `name` (string): The name of the course (e.g., Math, Science).
+- `teacher` (Teacher object): The teacher who is teaching this course.
+- `students` (list): A list of `Student` objects enrolled in the course.
+
+#### Constructor (`__init__`):
+- Initializes the `name` of the course, `teacher` (Teacher object), and an empty list `students` to store enrolled students.
+
+#### Methods:
+- `enroll_student(student)`: Adds a `Student` object to the `students` list, enrolling the student in the course.
+- `list_students()`: Returns a list of student names who are enrolled in the course.
+
+
+
