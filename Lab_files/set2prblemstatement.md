@@ -100,6 +100,21 @@ Represents a course that is being taught at the school.
 - `list_students()`: Returns a list of student names who are enrolled in the course.
 -         return [student.name for student in self.students]
 
+-  # Example usage:
+student1 = Student("Sad", 10)
+student2 = Student("Ego", 11)
+
+teacher1 = Teacher("The Creator:-God ", "Love and Peace")
+
+course1 = Course("Love and Peace", teacher1)
+course1.enroll_student(student1)
+course1.enroll_student(student2)
+
+# Print student details
+for student in [student1, student2]:
+    print(student.get_details())
+    print(f"Enrolled in {course1.name} taught by {teacher1.name}\n")   
+
 
 
 
