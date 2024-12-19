@@ -95,8 +95,11 @@ Represents a course that is being taught at the school.
 - Initializes the `name` of the course, `teacher` (Teacher object), and an empty list `students` to store enrolled students.
 
 #### Methods:
-- `enroll_student(student)`: Adds a `Student` object to the `students` list, enrolling the student in the course.
+- `enroll_student(student)`: Adds a `Student` object to the `students` list, enrolling the student in the course.          self.students.append(student)
+
 - `list_students()`: Returns a list of student names who are enrolled in the course.
+-         return [student.name for student in self.students]
+
 
 
 
