@@ -30,9 +30,11 @@ The `BankAccount` class represents a bank account and allows basic operations li
 - Initializes the `account_number`, `customer`, and `balance` attributes.
 
 #### Methods:
-- `deposit(amount)`: Deposits the given amount into the account. Returns a success message with the updated balance.
-- `withdraw(amount)`: Withdraws the given amount from the account if the balance is sufficient. Returns a success message with the updated balance, or a message indicating insufficient balance.
-- `details()`: Returns a string displaying the account number, customer details, and current balance.
+- `deposit(amount)`: Deposits the given amount into the account. Returns a success message with the updated balance.self,amount,balance,+=
+- return amount ,self.balance
+- `withdraw(amount)`: Withdraws the given amount from the account if the balance is sufficient. Returns a success message with the updated balance, or a message indicating insufficient balance.amount,<,=,self.balance,self.balance,-=,amount
+- return
+- `details()`: Returns a string displaying the account number, customer.details, and current s.balance.
 
 ### 3. Bank Class
 
@@ -40,14 +42,16 @@ The `Bank` class manages multiple bank accounts and provides methods to add acco
 
 #### Attributes:
 - `accounts` (dictionary): A dictionary to store all bank accounts, with the `account_number` as the key and `BankAccount` objects as values.
-
 #### Constructor (`__init__`):
-- Initializes an empty dictionary `accounts` to store the bank accounts.
+- Initializes an empty dictionary `accounts` to store the bank accounts.self.accounts={}
 
 #### Methods:
-- `add_account(account)`: Adds a new account to the bank. Returns a message confirming that the account has been added.
+- `add_account(account)`: Adds a new account to the bank. Returns a message confirming that the account has been added.self,acounts,[],account.accountnumber,=acount
+- return account.account_number
 - `get_account(account_number)`: Retrieves the account details for a given `account_number`. If the account exists, returns its details; otherwise, returns an "Account not found" message.
+- return self.accounts.get(account_number, "Account not found.")
 - `info()`: Returns the total number of accounts currently in the bank.
+- return f"Number of Accounts: {len(self.accounts)}"
 
 
 # School Management System
