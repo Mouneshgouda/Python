@@ -1,399 +1,64 @@
-# Object Oriebted Programming Concepts
-- <img src="https://github.com/SP-XD/SP-XD/blob/main/images/letterbox.gif?raw=true" width="25"/> [![Be the Hero of Your Own Story](https://img.shields.io/badge/-Be%20the%20Hero%20of%20Your%20Own%20Story-c14438?style=flat-square&logo=Gmail&logoColor=white)]
-
-## OOP/OOPs (object oriented programming system) 
-
-*Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior.*
-
-- OOPS is a programming paradigm based on the concept of "objects", and that contain code and data
-- OOP is a method that arranges software design around data or object
-- There are many Object-oriented programming languages including Java, c++, Python, and javascript
-- In OOP computer programs are designed to make objects interact with each other
-- The first step in OOP is to collect all objects to manipulate and identify how they relate to each other
-- programming is well suited for programs that are large, complex, and activity updated and maintained
-- OOP benefits collaborative development, where projects are separated into groups.
-- once the object is known then it labels as a class of object
-
-<img width="100%" src="imgs/OOPConcepts.png"/>
-
-## the structure of object-oriented programming
-
-*The structure, or building blocks, of object-oriented programming include the following:*
-
-- **Classes** are user-defined data types that act as the blueprint for individual objects, attributes and methods.
-- **Objects** are instances of a class created with specifically defined data. Objects can correspond to real-world objects or an abstract entity. When class is defined initially, the description is the only object that is defined.
-- **Methods** are functions that are defined inside a class that describe the behaviors of an object. Each method contained in class definitions starts with a reference to an instance object. Additionally, the subroutines contained in an object are called instance methods. Programmers use methods for reusability or keeping functionality encapsulated inside one object at a time.
-- **Attributes** are defined in the class template and represent the state of an object. Objects will have data stored in the attributes field. Class attributes belong to the class itself.
-
-<img width="100%" src="imgs/OOPStructre.png"/>
-
-
-## Class
-
-- Classes are defined by the user
-- Classes acts as bluepribt for object, attribute and methods
-- A class is consist of declaration and defination
-- Class is created using the class keyword
-- Classes are used to create and manage new object and support inheritance 
-
-
-**Syntax:**
-
-```python
-class classname:
-    '''documentation string'''
-    class_suite
-```
-* **Documentation string:** represent a description of the class. It is optional.
-* **class_suite:** class suite contains component statements, variables, methods, functions, attributes.
-
-The example for class of parrot can be :
-
-```python
-class Parrot:
-    pass
-```
-
-Here, we use the **`class`** keyword to define an empty class **`Parrot`**. From class, we construct instances. An instance is a specific object created from a particular class.
-
-```python
-class Person:
-    pass
-print(Person)
-```
-
-<img width="100%" src="imgs/OOPClass.png"/>
-
-## Object
-
-- Objects are instances of a class
-- Objects are created with specific data
-- Objects provides a structured approach to programming
-- We can easily create multiple similar object and modify existing object 
-- Object in OOP's can include a data structure, a vartiable or function
-
-**Syntax:**
-
-```python
-reference_variable = classname()
-```
-
-The example for object of parrot class can be:
-
-```python
-obj = Parrot()
-```
-
-Here, **`obj`** is an **`object`** of class Parrot.
-
-Suppose we have details of parrots. Now, we are going to show how to build the class and objects of parrots.
-
-```python
-p = Person()
-print(p)
-```
-# Example 1: We can create an object by calling the class
-
-```python
-p = Person()
-print(p)
-```
-# Example 2: Creating Class and Object in Python
-
-```python
-class Student:
-    """This is student class with data"""    
-    def learn(self):    # A sample method
-        print("Welcome to Guranna Gouda's class on Python Programming")
-
-stud = Student()        # creating object
-stud.learn()            # Calling method
-```
-### Output: Welcome to Guranna Gouda's class on Python Programming
-
-# How to insert Value Using Construct
-```python
-class Student:
-    """This is student class with data"""    
-    def __init__(self, name):
-        self.name = name
-    
-    def learn(self):
-        print(f"Welcome, {self.name}, to Guranna Gouda's class on Python Programming")
-
-# Creating an object with a specified name
-stud = Student(name="Guru")
-stud.learn()
-```
-
-## Class Constructor
-
-In the examples above, we have created an object from the **`Person`** class. However, a class without a constructor is not really useful in real applications. Let us use constructor function to make our class more useful. Like the constructor function in Java or JavaScript, Python has also a built-in **`__init__()`** constructor function. The **`__init__()`** constructor function has **`self`** parameter which is a reference to the current instance of the class.
-
-The **`__init__()`**  method in Python is a special method, also known as the constructor, and it is automatically called when an object is created from a class. Its primary purpose is to initialize the attributes of the object.
-
-```python
-class Person:
-      def __init__ (self, name):
-        # self allows to attach parameter to the class
-          self.name =name
-
-p = Person('Eren')
-print(p.name)
-print(p)
-```
-# Example 1: add more parameters to the constructor function.
-```python
-class Person:
-      def __init__(self, firstname, lastname, age, country, city):
-            self.firstname = firstname
-            self.lastname = lastname
-            self.age = age
-            self.country = country
-            self.city = city
-
-p = Person('Guru', 'Patil', 22, 'India', 'Bengaluru')
-print(p.firstname)
-print(p.lastname)
-print(p.age)
-print(p.country)
-print(p.city)
-```
-```python
-#output
-# Guru
-# Patil
-# 22
-# India
-# Bengaluru
-```
-<img width="100%" src="imgs/OOPObject.png"/>
-
-> here in this example class in animal and objects are dog,cat,cow,elephant
-
-> each object has its own identity attribute and behaviour
-
-> every object contain real-life entities
-
-
-## the main principles of OOP
-
-*Object-oriented programming is based on the following principles:*
-
-- **Encapsulation.** This principle states that all important information is contained inside an object and only select information is exposed. The implementation and state of each object are privately held inside a defined class. Other objects do not have access to this class or the authority to make changes. They are only able to call a list of public functions or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
-  
-<img width="100%" src="imgs/encapsulation_python_class.jpg"/>
-
-```python
-class Employee:
-    # constructor
-    def __init__(self, name, salary, project):
-        # data members
-        self.name = name
-        self.salary = salary
-        self.project = project
-
-    # method
-    # to display employee's details
-    def show(self):
-        # accessing public data member
-        print("Name: ", self.name, 'Salary:', self.salary)
-
-    # method
-    def work(self):
-        print(self.name, 'is working on', self.project)
-
-# creating object of a class
-emp = Employee('Jessa', 8000, 'NLP')
-
-# calling public method of the class
-emp.show()
-emp.work()
-```
-```python
-- Output
-Name:  Jessa Salary: 8000
-Jessa is working on NLP
-```
-
-# Access Modifiers in Python
-Encapsulation can be achieved by declaring the data members and methods of a class either as private or protected. But In Python, we don’t have direct access modifiers like public, private, and protected. We can achieve this by using single underscore and double underscores.
-
-Access modifiers limit access to the variables and methods of a class. Python provides three types of access modifiers private, public, and protected.
-
-- **Public Member:** Accessible anywhere from otside oclass.
-- **Private Member:** Accessible within the class
-- **Protected Member:** Accessible within the class and its sub-classes
-
-- **Public Member**
-Public data members are accessible within and outside of a class. All member variables of the class are by default public.
-```python
-class Employee:
-    # constructor
-    def __init__(self, name, salary):
-        # public data members
-        self.name = name
-        self.salary = salary
-
-    # public instance methods
-    def show(self):
-        # accessing public data member
-        print("Name: ", self.name, 'Salary:', self.salary)
-
-# creating object of a class
-emp = Employee('Jessa', 10000)
-
-# accessing public data members
-print("Name: ", emp.name, 'Salary:', emp.salary)
-
-# calling public method of the class
-emp.show()
-```
-```python
-Name:  Jessa Salary: 10000
-Name:  Jessa Salary: 10000
-```
-
-- **Private Member**
-We can protect variables in the class by marking them private. To define a private variable add two underscores as a prefix at the start of a variable name.
-
-Private members are accessible only within the class, and we can’t access them directly from the class objects.
-
-```python
-class Employee:
-    # constructor
-    def __init__(self, name, salary):
-        # public data member
-        self.name = name
-        # private member
-        self.__salary = salary
-
-# creating object of a class
-emp = Employee('Jessa', 10000)
-
-# accessing private data members
-print('Salary:', emp.__salary)
-
--output
-AttributeError: 'Employee' object has no attribute '__salary'
-```
-
-```python
-
-class Employee:
-    # constructor
-    def __init__(self, name, salary):
-        # public data member
-        self.name = name
-        # private member
-        self.__salary = salary
-
-# creating object of a class
-emp = Employee('Jessa', 10000)
-
-print('Name:', emp.name)
-# direct access to private member using name mangling
-print('Salary:', emp._Employee__salary)
-
--output
-Name: Jessa
-Salary: 10000
-```
-- **Protected Member.**
-Protected members are accessible within the class and also available to its sub-classes. To define a protected member, prefix the member name with a single underscore _.
-
-Protected data members are used when you implement inheritance and want to allow data members access to only child classes.
-```python
-# base class
-class Company:
-    def __init__(self):
-        # Protected member
-        self._project = "NLP"
-
-# child class
-class Employee(Company):
-    def __init__(self, name):
-        self.name = name
-        Company.__init__(self)
-
-    def show(self):
-        print("Employee name :", self.name)
-        # Accessing protected member in child class
-        print("Working on project :", self._project)
-
-c = Employee("Jessa")
-c.show()
-
-# Direct access protected data member
-print('Project:', c._project)
-
--output
-Employee name : Jessa
-Working on project : NLP
-Project: NLP
-
-```
-- **Getters and Setters in Python**
-To implement proper encapsulation in Python, we need to use setters and getters. The primary purpose of using getters and setters in object-oriented programs is to ensure data encapsulation. Use the getter method to access data members and the setter methods to modify the data members.
-
-In Python, private variables are not hidden fields like in other programming languages. The getters and setters methods are often used when:
-
-When we want to avoid direct access to private variables
-To add validation logic for setting a value
-```python
-class Student:
-    def __init__(self, name, age):
-        # private member
-        self.name = name
-        self.__age = age
-
-    # getter method
-    def get_age(self):
-        return self.__age
-
-    # setter method
-    def set_age(self, age):
-        self.__age = age
-
-stud = Student('Jessa', 14)
-
-# retrieving age using getter
-print('Name:', stud.name, stud.get_age())
-
-# changing age using setter
-stud.set_age(16)
-
-# retrieving age using getter
-print('Name:', stud.name, stud.get_age())
-
--Output
-Name: Jessa 14
-Name: Jessa 16
-```
-<img width="100%" src="imgs/python_data_hiding.jpg"/>
-
-<img width="100%" src="imgs/OOPEncapsulation.png"/>
-
-- **Abstraction.** Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. The derived class can have its functionality extended. This concept can help developers more easily make additional changes or additions over time.
-
-<img width="100%" src="imgs/OOPAbstraction.png"/>
-
-- **Inheritance.** Classes can reuse code from other classes. Relationships and subclasses between objects can be assigned, enabling developers to reuse common logic while still maintaining a unique hierarchy. This property of OOP forces a more thorough data analysis, reduces development time and ensures a higher level of accuracy.
-
-<img width="100%" src="imgs/OOPInheritance.png"/>
-
-- **Polymorphism.** Objects are designed to share behaviors and they can take on more than one form. The program will determine which meaning or usage is necessary for each execution of that object from a parent class, reducing the need to duplicate code. A child class is then created, which extends the functionality of the parent class. Polymorphism allows different types of objects to pass through the same interface.
-
-<img width="100%" src="imgs/OOPPolymorphism.png"/>
-
-## the benefits of OOP
-
-*Benefits of OOP include:*
-
-- **Modularity.** Encapsulation enables objects to be self-contained, making troubleshooting and collaborative development easier.
-- **Reusability.** Code can be reused through inheritance, meaning a team does not have to write the same code multiple times.
-- **Productivity.** Programmers can construct new programs quicker through the use of multiple libraries and reusable code.
-- **Easily upgradable and scalable.** Programmers can implement system functionalities independently.
-- **Interface descriptions.** Descriptions of external systems are simple, due to message passing techniques that are used for objects communication.
-- **Security.** Using encapsulation and abstraction, complex code is hidden, software maintenance is easier and internet protocols are protected.
-- **Flexibility.** Polymorphism enables a single function to adapt to the class it is placed in. Different objects can also pass through the same interface.
+This post will be a little technical, a little bit complicated, but very important - we will be installing MySQL Workbench and a MySQL Server. You'll need both in almost every post of our SQL collection: SQL INSERT Statement, SQL UPDATE Statement, SQL DELETE Statement, SQL Best Practices;
+Installing MySQL
+Let's look at MySQL's official website.
+Select the "Downloads" section and click on "Community", as we would like to show you how to download a file that is open-source and free.
+We will go through the installation process for a machine operating on Windows, but please remember the video will be useful if you are installing MySQL on a machine running on Mac OS or Linux, as what needs to be done is similar.
+So… I'll click on "MySQL on Windows".
+You can either download MySQL components and tools separately or download the MySQL installer then choose which tools you would like to install from there. The second option is much quicker and easier to implement. That's why we will select the Installer.
+Scroll down to where you see two versions of the installer. Before discussing them, please pay attention to this important note.
+MySQL Workbench, its installer, and all software tools are constantly being updated to solve different bugs and whatnot. This is why, during the installation process, we can be left with the impression that the components we are installing are different versions. This is not an issue. Usually, the changes between different versions are marginal. That's why they would not affect the execution of the tasks presented throughout this post.
+So please, if you are about to download a version of MySQL that is older or newer than the one you see in this post, remember apply all code used in our SQL posts and exercises without experiencing issues.
+Now that we said that, let's focus our attention on the two options provided. The first one is suitable for those of you who have internet connection (throughout the installation process).
+The second will be appropriate if you will just download the file and then install the software when you are offline. Naturally, the first one is better. Select the relevant "Download" button.
+A page offering you to log in or sign up for an Oracle Web account will open. This is not an obligatory requirement, so you can press "No thanks, just start my download."
+Then, a new window will pop up. Select the directory where you would like the installer file to be downloaded. When you've done that, click on "Save".
+We don't need the MySQL page anymore. So, you can open the installer and wait for it to load.
+As this is happening, depending on the version of your operating system and its settings, you might get a message asking you to allow certain apps to make changes to your device. Please, agree and continue.
+Then, a prompt box will appear asking you for an update. You don't need it at the moment, so please press "No".
+Right!
+This is the MySQL Installer window. "To proceed you must accept the Oracle Software License Terms". You can do this by ticking this little box at the bottom of the window and then clicking on "Next".
+What comes up are a few different Setup Types. We need not discuss all of them. For our purposes, "Custom" will allow us to specify the tools we need. So, let's select "Custom" and click on "Next".
+Ok. At this stage, you can select the products to be installed. In the next section of this post (The Client-Server Model) you will find a PDF file explaining why we will need "MySQL Workbench" and a MySQL server.
+First, expand the Applications section, then the "MySQL Workbench" subsection, and then click on the name of the tool and on the little green arrow to move it to the section of products or features to be installed.
+Good.
+Now, we must add a server. Expand the "MySQL Servers" section, then the "MySQL Server" subsection, and finally choose one of the two versions - the 64-bit or the 32-bit (which is called X 86). I will be coherent with the Workbench feature, so I'll select the 64-bit version.
+Great!
+We are done selecting features. Click on "Next" to move to the next stage of the installation process.
+Press "Execute" to install Workbench and the MySQL Server package.
+Once this is done, the status of both features will be marked as "complete". This means we are ready to proceed. Let's click "Next" again.
+You'll move to the stage of product configuration - the last step of the installation process. The status of the Server should become "Ready to Configure". This means you can move a step further.
+Ok!
+Now, you will adjust the configurations of your server. We need not go into details. Keeping the default settings in the next two pages will let us install a version that will suit the purposes of our SQL posts. So, just click "Next" two times.
+A-ha! This step is crucial, and it must not be overlooked! Here, you are being asked to set up a root password. And you mustn't forget your password, because it will be hard to change or recover it later. Otherwise, "root" refers to the main connection established between you, as a user and the MySQL server you are about to install.
+Press "Next" once more, and…
+Keep all the settings that just appeared as they are, especially the ones regarding the start of the MySQL server at System Startup. Unless you leave this option ticked, you must set up the server manually when you use SQL, and that's not a straightforward operation.
+Ok, press "Next" again.
+You will be offered to install a plug-in that contains improvements on previous versions of Workbench, but it will not be relevant for us right now. So, please skip this step by clicking "Next" once more.
+And… finally… "Execute"!
+Wait until the installation is complete and click on "Finish".
+You won't need to go through the wizard that appears, so click on "Next".
+Then, leave the tick on "Start MySQL Workbench after Setup" and press "Finish".
+Now, Workbench will load and you can set up a connection between Workbench and the MySQL Server.
+We'll learn to do that in the section "Setting up a connection".
+The Client-Server Model
+In this PDF file you will find a visualization that explains which MySQL features we must install and why.
+The program we will be working within this post is called MySQL Workbench. It is the Oracle visual tool for database design, modelling, creation, manipulation, maintenance, and administration. Professionals refer to this type of software as "Integrated Development Environment" or IDE. So, Workbench will be our IDE.
+And, if you wonder what Oracle is, this is the software company that owns the MySQL version of SQL.
+You could also wonder why we would need a server. Sticking to the basic theory of operation of computer networks, MySQL Workbench acts as a client program - a client of a MySQL Server. The server is, practically, nothing more than a machine that provides data and services to the same or other computers. The data could be provided locally or online. Regardless whether the server is installed locally on your computer or is being accessed remotely over the internet from another computer, you will need a Server to use MySQL. In our case, we installed the server locally.
+Briefly, the server will perform all calculations and operations you execute in Workbench. You will be writing queries through the Workbench interface, in the form of raw code, which MySQL server understands and processes. Finally, when it finalizes its calculations, it will bring the respective results back to you in the form of an output displayed on your screen.
+Setting up a connection
+All right!
+MySQL Workbench is the official Graphical User Interface tool, or GUI tool, for MySQL. This means it will be the tool that will show us "communication" with the MySQL server.
+Fantastic!
+First, to access Workbench, we must set up a connection between your GUI and the MySQL server. Otherwise, the two will not be linked, and you cannot execute any code.
+A connection has been created for you.
+Click on the rectangle you see here then insert the password you designated during the installation process. Press "Ok" and… here you go.
+Now you can use the MySQL Workbench!
+Getting acquainted with the interface will be the focus of our next section. Before doing that, I would like to tell you that you can load more than one connection at a time in your GUI. All connections will be under different tabs, next to the house in the upper left part of the screen.
+Should you press the house icon, logically, you'll immediately jump to the main tab, showing your MySQL connections. We can see just one. Ok.
+If you want to go back to the connection already loaded, you must click on its name. And, to close it, just press this little close sign.
+Nice!
+If you need to set up a connection, you must press the little "plus" sign on the right side of the "MySQL Connections" label.
+In the window that pops up, you will see several empty fields. The first one is compulsory, as the text inserted will be the name of the connection you are about to establish. Then, you can click on "Test Connection" to see if, after typing the password assigned in advance, the connection works.
+Once the connection is correctly set up, another rectangle will appear in the home screen, and you'll be able to access Workbench from there.
+In this poste, you won't have to set up a connection on your own, as you'll
