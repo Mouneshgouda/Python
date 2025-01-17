@@ -3,7 +3,7 @@
 
 
 # Python Full Stack Development.
-# feedback(https://forms.gle/YH4AMpB3x4eJF7DK6)
+
 
 ## **🎓 Course Information** 
 
