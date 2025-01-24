@@ -92,29 +92,31 @@ def myFun(x, y=50):
 myFun(10)
 ```
 ### 8. What output do you expect from the above code?
-The output of the above code will be:
+ The output of the above code will be:
 
-x: 10
-y: 50
-Since the function myFun is called with a value for x, but no value for y, it uses the default value of y which is 50.
+ x: 10
+ y: 50
+ Since the function myFun is called with a value for x, but no value for y, it uses the default value of y which is 50.
 
-9. State any 2 popular applications of Python.
-Web Development: Python is widely used for web development, with frameworks like Django and Flask.
-Data Science and Machine Learning: Python is one of the most popular languages for data analysis and machine learning, with libraries such as Pandas, NumPy, and TensorFlow.
-10. How do you define a function in Python?
-The correct way to define a function in Python is:
-B. def my_function():
+### 9. State any 2 popular applications of Python.
+ Web Development: Python is widely used for web development, with frameworks like Django and Flask.
+ Data Science and Machine Learning: Python is one of the most popular languages for data analysis and machine learning, with libraries such as Pandas, NumPy, and TensorFlow.
+### 10. How do you define a function in Python?
+ The correct way to define a function in Python is:
+ ```
+ B. def my_function():
 
 
-def my_function():
-    print("Hello, World!")
-11. What is polymorphism in Object-Oriented Programming?
-Polymorphism is an OOP concept where objects of different classes can be treated as objects of a common superclass. It allows methods to be used in multiple forms. This can be achieved through method overriding or method overloading.
-
+ def my_function():
+     print("Hello, World!")
+```
+### 11. What is polymorphism in Object-Oriented Programming?
+ Polymorphism is an OOP concept where objects of different classes can be treated as objects of a common superclass. It allows methods to be used in multiple forms. This can be achieved 
+ through method overriding or method overloading.
+```
 Example:
 
-python
-Copy
+
 class Dog:
     def speak(self):
         return "Woof"
@@ -131,19 +133,18 @@ cat = Cat()
 
 animal_sound(dog)  # Output: Woof
 animal_sound(cat)  # Output: Meow
+```
 12. Define a Python module.
 A Python module is a file containing Python definitions and statements. It can define functions, classes, and variables that can be used in other Python scripts. Python modules help organize and reuse code.
-
+```
 Example of creating a module (my_module.py):
 
-python
-Copy
 # my_module.py
 def greet():
     print("Hello from the module!")
 To use it in another script:
 
-python
-Copy
+
 import my_module
 my_module.greet()
+```
