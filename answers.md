@@ -12,3 +12,11 @@
 ## 4. What is encapsulation in OOP?
  Encapsulation is the concept of bundling the data (variables) and methods (functions) that operate on the data into a single unit, or class. It restricts direct access to some of the object's components and can prevent the accidental 
  modification of data by outside code.
+
+## 5How do you import a module in Python?
+- You can import a module in Python using the import keyword, like this:
+
+python
+```
+import module_name
+```
