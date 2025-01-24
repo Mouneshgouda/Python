@@ -22,12 +22,11 @@ import module_name
 ```
 ### 1. How can you connect Python to a MySQL database?
 To connect Python to a MySQL database, you can use the `mysql-connector` library. You can install it using pip:
-```bash
+```
 pip install mysql-connector
 Once installed, use the following code to connect:
 
-python
-Copy
+
 import mysql.connector
 
 conn = mysql.connector.connect(
@@ -36,20 +35,20 @@ conn = mysql.connector.connect(
     password="your_password",
     database="your_database"
 )
-2. What does the break statement do in Python loops?
+```
+### 2. What does the break statement do in Python loops?
 The break statement is used to terminate the current loop (for or while) immediately, skipping any remaining iterations. After the break is executed, the program continues with the next statement after the loop.
-
+```
 Example:
 
-python
-Copy
 for i in range(10):
     if i == 5:
         break  # Stops the loop when i is 5
     print(i)
-3. What is the purpose of the return statement in a function?
+```
+### 3. What is the purpose of the return statement in a function?
 The return statement is used to exit a function and return a value from that function to the calling code. If no value is specified, the function returns None by default.
-
+```
 Example:
 
 python
@@ -59,19 +58,17 @@ def add(a, b):
 
 result = add(5, 3)
 print(result)  # Output: 8
-4. What is encapsulation in OOP?
-Encapsulation is an object-oriented programming (OOP) concept where the data (attributes) and the methods (functions) that manipulate the data are bundled together in a class. It helps protect the internal state of an object by restricting access to certain components.
+```
+### 4. What is encapsulation in OOP?
+ Encapsulation is an object-oriented programming (OOP) concept where the data (attributes) and the methods (functions) that manipulate the data are bundled together in a class. It helps 
+ protect the internal state of an object by restricting access to certain components.
 
-5. How do you import a module in Python?
+### 5. How do you import a module in Python?
 You can import a module using the import keyword:
-
-python
-Copy
 import module_name
 To import a specific function or class from a module:
 
-python
-Copy
+```
 from module_name import function_name
 Example:
 
@@ -79,25 +76,24 @@ python
 Copy
 import math
 print(math.sqrt(16))  # Output: 4.0
-6. Convert the following list to a tuple:
-python
-Copy
+```
+### 6. Convert the following list to a tuple:
+```
 nameList = ["Jhon Break", "Nelson Dia", "Miller joe"]
 nameTuple = tuple(nameList)
 print(nameTuple)
-7. Consider the following Python code:
-python
-Copy
+```
+### 7. Consider the following Python code:
+```
 def myFun(x, y=50):
     print("x:", x)
     print("y:", y)
 
 myFun(10)
-8. What output do you expect from the above code?
+```
+### 8. What output do you expect from the above code?
 The output of the above code will be:
 
-makefile
-Copy
 x: 10
 y: 50
 Since the function myFun is called with a value for x, but no value for y, it uses the default value of y which is 50.
@@ -109,8 +105,7 @@ Data Science and Machine Learning: Python is one of the most popular languages f
 The correct way to define a function in Python is:
 B. def my_function():
 
-python
-Copy
+
 def my_function():
     print("Hello, World!")
 11. What is polymorphism in Object-Oriented Programming?
