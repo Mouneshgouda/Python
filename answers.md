@@ -3,7 +3,7 @@
 ## 1. How can you connect Python to a MySQL database?
 **Answer:**
 To connect Python to a MySQL database, you can use the `mysql-connector` library. You need to install the library using:
-```bash
+
 pip install mysql-connector
 Then, use the following code to connect to the MySQL database:
 
@@ -20,8 +20,9 @@ conn = mysql.connector.connect(
 cursor = conn.cursor()
 # Your SQL queries go here
 conn.close()
-2. What does the break statement do in Python loops?
-Answer: The break statement is used to terminate the current loop (either for or while) immediately, regardless of whether the loop has finished iterating over all elements. After the break statement is executed, the program continues to the code after the loop.
+
+##2. What does the break statement do in Python loops?
+**Answer:** The break statement is used to terminate the current loop (either for or while) immediately, regardless of whether the loop has finished iterating over all elements. After the break statement is executed, the program continues to the code after the loop.
 
 3. What is the purpose of the return statement in a function?
 Answer: The return statement is used to exit a function and return a value to the caller. Once return is executed, the function terminates, and the value specified in the return statement is sent back to the function caller.
