@@ -191,3 +191,6 @@ You can adjust the following parameters to create a custom urban plan:
   
 This enables you to assess the effectiveness of your proposals before implementation, helping in creating more efficient and sustainable urban environments.
 
+
+
+
