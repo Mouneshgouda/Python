@@ -1,6 +1,6 @@
 # Advanced AI-Driven Urban Planning Tool
 
-This tool allows you to:
+This tool allows you to: 
 
 - **Upload File**: Choose and upload a CSV or Excel file containing urban data (limit of 200MB per file).
 - **Generate Synthetic Data**: Simulate urban scenarios or create mock data for various urban planning needs.
